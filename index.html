@@ -8,6 +8,10 @@
 </head>
 <body>
     <header>
+        <!--club-Logo-->
+        <div class="logo">
+            <img src="assets/club-logo.JPG" alt="Soccer Club Logo" />
+        </div>
         <nav>
             <ul>
                 <li><a href="#">Home</a></li>
@@ -33,11 +37,36 @@
         <section id="membership">
             <h2>Membership Form</h2>
             <p>Become a member of our club today!</p>
+            <form action="#" method="POST">
+                <label for="name">Full Name:</label><br>
+                <input type="text" id="name" name="name" placeholder="Enter your name" required><br><br>
+        
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required><br><br>
+        
+                <label for="age">Age:</label><br>
+                <input type="number" id="age" name="age" placeholder="Enter your age" required><br><br>
+        
+                <label for="position">Preferred Position:</label><br>
+                <select id="position" name="position">
+                    <option value="forward">Forward</option>
+                    <option value="midfielder">Midfielder</option>
+                    <option value="defender">Defender</option>
+                    <option value="goalkeeper">Goalkeeper</option>
+                </select><br><br>
+        
+                <button type="submit">Join Now</button>
+            </form>
         </section>
     
         <section id="sponsors">
             <h2>Our Sponsors</h2>
             <p>Special thanks to our sponsors for supporting us!</p>
+            <div class="sponsor-logos">
+                <img src="images/sponsor1.png" alt="Sponsor 1" />
+                <img src="images/sponsor2.png" alt="Sponsor 2" />
+                <img src="images/sponsor3.png" alt="Sponsor 3" />
+            </div>
         </section>
     
         <section id="contact">
