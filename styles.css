@@ -360,3 +360,175 @@ nav ul li a:hover {
     left: 0;
     top: -3px;
 }
+
+/* Programs Section */
+#programs {
+    padding: 40px 20px;
+    background-color: #f9f9f9; /* White background for contrast */
+    border-radius: 10px;
+    text-align: center;
+    margin: 20px auto;
+    max-width: 800px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+#programs h2 {
+    font-size: 2rem;
+    color: #d32f2f; /* Red theme color */
+    margin-bottom: 15px;
+}
+
+#programs p {
+    font-size: 1.2rem;
+    color: #333; /* Dark text for readability */
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+#programs ul {
+    list-style-type: none; /* Remove default bullets */
+    padding: 0;
+    text-align: left; /* Align list text to the left */
+    margin: 0 auto;
+    max-width: 600px; /* Center the list */
+}
+
+#programs ul li {
+    font-size: 1.2rem;
+    color: #555; /* Subtle text color */
+    margin-bottom: 15px;
+    padding-left: 40px; /* More padding for space between icon and text */
+    position: relative;
+}
+
+#programs ul li::before {
+    content: '⚽'; /* Soccer icon as bullet */
+    font-size: 1.5rem;
+    position: absolute;
+    left: 0;
+    top: 50%; /* Center vertically */
+    transform: translateY(-50%);
+    animation: ball-spin 2s infinite; /* Ball rotation animation */
+    color: #fff;
+    text-shadow: 0 0 10px #ff0000, 0 0 20px #00ff00, 0 0 30px #0000ff; /* RGB glow */
+}
+
+@keyframes ball-spin {
+    0% {
+        transform: translateY(-50%) rotate(0deg);
+    }
+    100% {
+        transform: translateY(-50%) rotate(360deg);
+    }
+}
+/* Soccer Ball Animation for Join Us and What We Offer Sections */
+#what-we-offer ul li::before,
+#join-us ul li::before {
+    content: '⚽'; /* Soccer icon as bullet */
+    font-size: 1.5rem;
+    position: absolute;
+    left: 0;
+    top: 50%; /* Center vertically */
+    transform: translateY(-50%);
+    animation: ball-spin 2s infinite; /* Ball rotation animation */
+    color: #fff;
+    text-shadow: 0 0 10px #ff0000, 0 0 20px #00ff00, 0 0 30px #0000ff; /* RGB glow */
+}
+
+@keyframes ball-spin {
+    0% {
+        transform: translateY(-50%) rotate(0deg);
+    }
+    100% {
+        transform: translateY(-50%) rotate(360deg);
+    }
+}
+
+/* Join Us Section */
+#join-us {
+    padding: 40px 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    text-align: center;
+    margin: 20px auto;
+    max-width: 800px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    position: relative; /* For positioning the ball animation */
+}
+
+/* Rotating Soccer Ball Animation */
+#join-us .soccer-ball-container {
+    position: absolute;
+    top: -50px; /* Adjust to position the ball properly */
+    left: 50%;
+    transform: translateX(-50%);
+    animation: rotate-ball 5s linear infinite, rgb-glow 3s infinite alternate;
+}
+
+@keyframes rotate-ball {
+    0% {
+        transform: translateX(-50%) rotate(0deg);
+    }
+    100% {
+        transform: translateX(-50%) rotate(360deg);
+    }
+}
+
+@keyframes rgb-glow {
+    0% {
+        box-shadow: 0 0 10px rgba(255, 0, 0, 1), 0 0 20px rgba(0, 255, 0, 1), 0 0 30px rgba(0, 0, 255, 1);
+    }
+    100% {
+        box-shadow: 0 0 15px rgba(255, 0, 0, 1), 0 0 25px rgba(0, 255, 0, 1), 0 0 35px rgba(0, 0, 255, 1);
+    }
+}
+
+#join-us h2 {
+    font-size: 2rem;
+    color: #d32f2f;
+    margin-bottom: 15px;
+}
+
+#join-us p {
+    font-size: 1.2rem;
+    color: #333;
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+#join-us h3 {
+    font-size: 1.5rem;
+    color: #d32f2f;
+    margin-bottom: 10px;
+}
+
+#join-us ul {
+    list-style-type: none;
+    padding: 0;
+    text-align: left;
+    margin: auto;
+}
+
+#join-us ul li {
+    font-size: 1.2rem;
+    color: #555;
+    margin-bottom: 20px;
+    padding-left: 35px;
+    position: relative;
+}
+
+/* Exclude animation for location, email, phone, and social media sections */
+#join-us .contact-info,
+#join-us .social-media{
+    color: #060505;
+}
+
+#join-us .contact-info p,
+#join-us .social-media a {
+    margin-bottom: 10px;
+    font-size: 1.1rem;
+}
+
+
+
+
