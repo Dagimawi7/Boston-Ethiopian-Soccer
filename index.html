@@ -14,17 +14,17 @@
         </div>
         <nav>
             <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Roster</a></li>
-                <li><a href="#">Membership</a></li>
-                <li><a href="#">Sponsors</a></li>
-                <li><a href="#">Contact Us</a></li>
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#roster" class="nav-link">Roster</a></li>
+                <li><a href="#membership" class="nav-link">Membership</a></li>
+                <li><a href="#sponsors" class="nav-link">Sponsors</a></li>
+                <li><a href="#contact" class="nav-link">Contact Us</a></li>
             </ul>
         </nav>
     </header>
     
     <main>
-        <section id="home">
+        <section id="home" class="section active">
             <h1>Boston Ethiopians Sport Club</h1>
             <p>Uniting our community through sports and camaraderie</p>
             <p>Welcome to the Boston Ethiopians Sport Club!</p>
@@ -128,38 +128,40 @@
             </div>
         </section>
 
-        <!--Our Roster Section-->
-        <section id="roster">
-            <h2>Our Roster</h2>
-            <p>Meet our talented players!</p>
-        </section>
+        <!-- Our Roster Section -->
+    <section id="roster"  class="section">
+        <h2>Our Roster</h2>
+        <p>Meet our talented players!</p>
+        <div class="roster-container">
+            <!-- Example Player Card -->
+             <div class="player-card">
+                <img src="player1.jpg" alt="Player 1">
+                <div class="player-details">
+                    <h3>Player Name</h3>
+                    <p>Position: Forward</p>
+                    <p>Age: 25</p>
+                    <p>Country: Brazil</p>
+                </div>
+            </div>
+        </div>
+    </section>
     
-        <section id="membership">
+        <!-- Membership Section -->
+        <section id="membership"  class="section">
             <h2>Membership Form</h2>
-            <p>Become a member of our club today!</p>
-            <form action="#" method="POST">
-                <label for="name">Full Name:</label><br>
-                <input type="text" id="name" name="name" placeholder="Enter your name" required><br><br>
-        
-                <label for="email">Email:</label><br>
-                <input type="email" id="email" name="email" placeholder="Enter your email" required><br><br>
-        
-                <label for="age">Age:</label><br>
-                <input type="number" id="age" name="age" placeholder="Enter your age" required><br><br>
-        
-                <label for="position">Preferred Position:</label><br>
-                <select id="position" name="position">
-                    <option value="forward">Forward</option>
-                    <option value="midfielder">Midfielder</option>
-                    <option value="defender">Defender</option>
-                    <option value="goalkeeper">Goalkeeper</option>
-                </select><br><br>
-        
-                <button type="submit">Join Now</button>
-            </form>
-        </section>
+            <p>Fill out the form below to apply for membership. We will review your application and notify you via email.</p>
     
-        <section id="sponsors">
+        <!-- Embedded Google Form -->
+            <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdGwfUwT_9SzssVdu86xm-Eg_G_uAEO1hSkHTftQH8tWrNIkg/viewform?usp=header" 
+            width="100%" 
+            height="600" 
+            frameborder="0" 
+            marginheight="0" 
+            marginwidth="0">Loading…</iframe>
+        </section>
+        
+        <!-- Sponsors-->
+        <section id="sponsors"  class="section">
             <h2>Our Sponsors</h2>
             <p>Special thanks to our sponsors for supporting us!</p>
             <div class="sponsor-logos">
@@ -168,11 +170,7 @@
                 <img src="images/sponsor3.png" alt="Sponsor 3" />
             </div>
         </section>
-    
-        <section id="contact">
-            <h2>Contact Us</h2>
-            <p>Get in touch with us for more information.</p>
-        </section>
+
     </main>
     <script src="Script.js"></script>
 </body>
