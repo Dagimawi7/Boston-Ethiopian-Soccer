@@ -585,4 +585,36 @@ nav ul li a:hover {
     color: #555;
 }
 
+/* General styling for the Sign-Up button */
+.btn-signup {
+    display: inline-block;
+    padding: 12px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #ffffff; /* White text */
+    background-color: #d32f2f; /* Red background */
+    border: none;
+    border-radius: 8px; /* Rounded corners */
+    text-decoration: none; /* Remove underline */
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+/* Hover effect for the button */
+.btn-signup:hover {
+    background-color: #b71c1c; /* Darker red */
+    transform: scale(1.05); /* Slight zoom effect */
+}
+
+/* Active/Pressed state */
+.btn-signup:active {
+    background-color: #9a0007; /* Even darker red */
+    transform: scale(0.95); /* Shrinks slightly */
+}
+
+/* Button alignment in the center of the page (optional, based on design needs) */
+.join-container {
+    text-align: center; /* Center-aligns content within the container */
+}
+
 
