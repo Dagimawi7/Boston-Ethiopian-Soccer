@@ -22,55 +22,155 @@ header .logo img {
     height: auto;
 }
 
-/* Navigation Bar */
-header nav ul {
-    list-style: none;
+/* Basic Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style-type: none;
+    text-align: center;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+}
+
+nav ul li a:hover {
+    color: #ff6347; /* Change color when hovered */
+}
+
+/* General Section Styles */
+main {
+    padding: 20px;
+    background-color: #fff;
+}
+
+section {
+    margin-bottom: 40px;
+}
+
+h1, h2 {
+    color: #333;
+}
+
+#home {
+    text-align: center;
+    background-color: #e9e9e9;
+    padding: 30px;
+}
+
+#roster, #membership, #sponsors, #contact {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border: 1px solid #ddd;
+}
+
+#contact {
+    background-color: #e9e9e9;
+}
+
+/* Mebership form*/
+form {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+form input, form select, form button {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form button {
+    background-color: #333;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #ff6347;
+}
+
+/*Sposnor*/
+.sponsor-logos {
     display: flex;
+    justify-content: center;
     gap: 20px;
+    margin-top: 20px;
+}
+
+.sponsor-logos img {
+    max-width: 150px;
+    height: auto;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+    background-color: white;
+}
+
+/* Style for the logo */
+.logo img {
+    max-width: 120px; /* Adjust size to fit your design */
+    height: auto;
+    margin-right: 20px;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    background-color: #333; /* Matches the navigation bar */
+    color: white;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
     margin: 0;
     padding: 0;
 }
 
-header nav ul li {
-    margin: 0;
+nav ul li {
+    margin: 0 15px;
 }
 
-header nav ul li a {
+nav ul li a {
     text-decoration: none;
     color: white;
-    font-weight: bold;
-    padding: 10px 15px;
-    transition: background-color 0.3s ease;
-    border-radius: 5px;
+    font-size: 16px;
 }
 
-header nav ul li a:hover {
-    background-color: #b71c1c;
+nav ul li a:hover {
+    color: #ff6347; /* Hover color */
 }
 
-/* Main Section */
-main {
-    padding: 20px;
-    text-align: center;
-}
 
-/* Roster Section */
-#roster {
-    margin: 20px auto;
-    max-width: 1200px;
-}
-
-#roster h2 {
-    color: #d32f2f;
-    font-size: 2rem;
-    margin-bottom: 10px;
-}
-
-#roster p {
-    color: #666;
-    margin-bottom: 20px;
-    font-size: 1.1rem;
-}
 
 /* Player Cards */
 .roster-container {
