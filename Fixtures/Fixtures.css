@@ -44,10 +44,16 @@ body {
     align-items: center;
     justify-content: space-between;
 }
-.match-info {
-    flex-grow: 1;
-    text-align: center;
+.matches-container {
+    max-width: 400px;
+    margin: 100px auto 0; /* Pushes it slightly lower than the navbar */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centers content horizontally */
+    justify-content: center; /* Centers content vertically */
+    min-height: 50vh; /* Ensures it's positioned in the middle of the screen */
 }
+
 .match-info .competition {
     font-weight: bold;
     color: #d00000;
@@ -75,16 +81,6 @@ body {
     font-size: 14px;
 }
 
-
-
-
-/* Basic Styles */
-body {
-    font-family: Arial, sans-serif;
-    margin: 10;
-    padding: 0;
-    background-color: #f4f4f4;
-}
 
 header {
     background-color: #333;
