@@ -23,13 +23,6 @@ header .logo img {
 }
 
 
-
-header {
-    background-color: #333;
-    color: white;
-    padding: 10px 0;
-}
-
 nav ul {
     list-style-type: none;
     text-align: center;
@@ -43,7 +36,7 @@ nav ul li {
 
 nav ul li a {
     text-decoration: none;
-    color: white;
+    color: rgb(24, 216, 37);
     font-size: 18px;
 }
 

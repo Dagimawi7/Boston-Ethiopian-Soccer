@@ -24,57 +24,102 @@
             </ul>
         </nav>
     </header>
-    <div class="matches-container">
-        <div class="month-section">
-            <div class="month-title" onclick="toggleMatches(this)">February - April 2025 (Winter Season) <span class="arrow">▼</span></div>
-            <div class="match-list">
-                <div class="match-ticket">
-                    <div class="match-info">
-                        <div class="competition">Gesla Sunday League</div>
-                        <div class="club-logos">
-                            <img src="/assets/club-logo.JPG" alt="Club 1">
-                            <span>vs</span>
-                            <img src="/assets/club-logo.JPG" alt="Club 2">
+    <!-- Adult Tournaments Section -->
+    <div class="adult-tournaments" id="adult-tournaments">
+        <div class="matches-container">
+            <!-- Adult Tournament Section -->
+            <div class="month-section">
+                <div class="month-title" onclick="toggleMatches(this)">
+                    <span>Adult Tournaments</span> 
+                    <span class="arrow">▼</span>
+                </div>
+                <div class="match-list">
+                    <!-- Tournament 1: February - April 2025 (Winter Season) -->
+                    <div class="match-ticket">
+                        <div class="match-info">
+                            <div class="competition">Gesla Sunday League</div>
+                            <div class="club-logos">
+                                <img src="/assets/club-logo.JPG" alt="Club 1">
+                                <span>vs</span>
+                                <img src="/assets/club-logo.JPG" alt="Club 2">
+                            </div>
+                            <div class="match-date">Every Sunday Until April - 10:30am - 1:30pm at 89 Elm St</div>
                         </div>
-                        <div class="match-date">Every Sunday Until April - 10:30am - 1:30pm at 89 Elm St  </div>
+                        <a href="https://www.google.com/maps/place/89+Elm+St,+Cambridge,+MA+02139/" class="map-link">Get Directions</a>
                     </div>
-                    <a href="https://www.google.com/maps/place/89+Elm+St,+Cambridge,+MA+02139/@42.3693694,-71.0978303,16z/data=!4m6!3m5!1s0x89e3774d4ebfc8e3:0xcb5b465f2dd135ef!8m2!3d42.3693694!4d-71.0978303!16s%2Fg%2F11b8vdqrvk?entry=ttu&g_ep=EgoyMDI1MDIxMi4wIKXMDSoASAFQAw%3D%3D" class="map-link">Get Directions</a>
+
+                    <!-- Tournament 2: May - June 2025 (Summer League) -->
+                    <div class="match-ticket">
+                        <div class="match-info">
+                            <div class="competition">Summer Cup</div>
+                            <div class="club-logos">
+                                <img src="/assets/club-logo.JPG" alt="Club 3">
+                                <span>vs</span>
+                                <img src="/assets/club-logo.JPG" alt="Club 4">
+                            </div>
+                            <div class="match-date">Every Sunday until Winter 2026 10:30am - 1:30pm at Rusell Field</div>
+                        </div>
+                        <a href="https://www.google.com/maps/place/Russell+Field/" class="map-link">Get Directions</a>
+                    </div>
+
+                    <!-- Tournament 3: July 2025 (ESFNA Tournament) -->
+                    <div class="match-ticket">
+                        <div class="match-info">
+                            <div class="competition">ESFNA Championship</div>
+                            <div class="club-logos">
+                                <img src="club5-logo.png" alt="Club 5">
+                                <span>vs</span>
+                                <img src="club6-logo.png" alt="Club 6">
+                            </div>
+                            <div class="match-date">July 10, 2025 - 7:30 PM</div>
+                        </div>
+                        <a href="#" class="map-link">Get Directions</a>
+                    </div>
                 </div>
             </div>
         </div>
-        
+    </div>
+
+    <!-- Events Section -->
+    <div class="events" id="events">
         <div class="month-section">
-            <div class="month-title" onclick="toggleMatches(this)">May - June 2025 (Summer League) <span class="arrow">▼</span></div>
+            <div class="month-title" onclick="toggleMatches(this)">
+                <span>Events</span>
+                <span class="arrow">▼</span>
+            </div>
             <div class="match-list">
-                <div class="match-ticket">
-                    <div class="match-info">
-                        <div class="competition">Summer Cup</div>
-                        <div class="club-logos">
-                            <img src="/assets/club-logo.JPG" alt="Club 3">
-                            <span>vs</span>
-                            <img src="/assets/club-logo.JPG" alt="Club 4">
-                        </div>
-                        <div class="match-date">Every Sunday until Winter 2026 10:30am - 1:30pm at Rusell Field</div>
-                    </div>
-                    <a href="https://www.google.com/maps/place/Russell+Field/@42.3964959,-71.1400396,17z/data=!4m10!1m2!2m1!1srussle+filed!3m6!1s0x89e37705cf2624d1:0xc0de1841c39a5b93!8m2!3d42.3964959!4d-71.1378509!15sCg1ydXNzZWxsIGZpZWxkkgEOYXRobGV0aWNfZmllbGTgAQA!16s%2Fg%2F1tcv_fbd?entry=ttu&g_ep=EgoyMDI1MDIxMi4wIKXMDSoASAFQAw%3D%3D" class="map-link">Get Directions</a>
+                <div class="event">
+                    <h3>Event 1</h3>
+                    <p>Details about event 1...</p>
+                    <a href="#">More Info</a>
+                </div>
+                <div class="event">
+                    <h3>Event 2</h3>
+                    <p>Details about event 2...</p>
+                    <a href="#">More Info</a>
                 </div>
             </div>
         </div>
-        
+    </div>
+
+    <!-- Kids Soccer Program Section -->
+    <div class="kids-soccer-program" id="kids-soccer-program">
+
         <div class="month-section">
-            <div class="month-title" onclick="toggleMatches(this)">July 2025 (ESFNA Tournament) <span class="arrow">▼</span></div>
+            <div class="month-title" onclick="toggleMatches(this)">
+                <span>Kids Soccer Program</span>
+                <span class="arrow">▼</span>
+            </div>
             <div class="match-list">
-                <div class="match-ticket">
-                    <div class="match-info">
-                        <div class="competition">ESFNA Championship</div>
-                        <div class="club-logos">
-                            <img src="club5-logo.png" alt="Club 5">
-                            <span>vs</span>
-                            <img src="club6-logo.png" alt="Club 6">
-                        </div>
-                        <div class="match-date">July 10, 2025 - 7:30 PM</div>
-                    </div>
-                    <a href="#" class="map-link">Get Directions</a>
+                <div class="program-details">
+                    <h3>Program 1</h3>
+                    <p>Details about the kids program 1...</p>
+                    <a href="#">Learn More</a>
+                </div>
+                <div class="program-details">
+                    <h3>Program 2</h3>
+                    <p>Details about the kids program 2...</p>
+                    <a href="#">Learn More</a>
                 </div>
             </div>
         </div>
