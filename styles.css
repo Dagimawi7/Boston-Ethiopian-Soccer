@@ -108,6 +108,29 @@ form button:hover {
     padding: 10px;
     background-color: white;
 }
+.sponsor-logos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+figure {
+    text-align: center;
+    max-width: 500px; /* Adjust size as needed */
+}
+
+figure img {
+    width: 100%;
+    height: auto;
+}
+
+figcaption {
+    margin-top: 5px;
+    font-weight: bold;
+    font-size: 14px;
+}
+
 
 /* Style for the logo */
 .logo img {
@@ -621,4 +644,23 @@ nav ul li a:hover {
     text-align: center; /* Center-aligns content within the container */
 }
 
+/* Mobile Menu */
+@media screen and (max-width: 768px) {
+    header {
+        flex-direction: row; /* Keep logo on left and nav on right */
+        justify-content: space-between;
+    }
+
+    nav ul {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end; /* Align nav to the right */
+        gap: 2px;
+    }
+
+    .nav-link {
+        display: block;
+        padding: 6px;
+    }
+}
 

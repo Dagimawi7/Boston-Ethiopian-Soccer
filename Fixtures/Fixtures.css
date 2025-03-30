@@ -192,3 +192,23 @@ nav ul li a:hover {
     text-decoration: underline;
 }
 
+
+/* Mobile Menu */
+@media screen and (max-width: 768px) {
+    header {
+        flex-direction: row; /* Keep logo on left and nav on right */
+        justify-content: space-between;
+    }
+
+    nav ul {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end; /* Align nav to the right */
+        gap: 2px;
+    }
+
+    .nav-link {
+        display: block;
+        padding: 6px;
+    }
+}
