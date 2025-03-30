@@ -263,6 +263,7 @@ nav ul li a:hover {
 
 
 
+
 /* Mobile Menu */
 @media screen and (max-width: 768px) {
     header {
@@ -279,6 +280,6 @@ nav ul li a:hover {
 
     .nav-link {
         display: block;
-        padding: 6px;
+        padding: px;
     }
 }
