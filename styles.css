@@ -101,7 +101,7 @@ form button:hover {
 }
 
 .sponsor-logos img {
-    max-width: 150px;
+    max-width: 500px;
     height: auto;
     border: 1px solid #ddd;
     border-radius: 5px;
