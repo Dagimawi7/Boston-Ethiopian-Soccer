@@ -133,10 +133,17 @@ figcaption {
 
 
 /* Style for the logo */
+.logo {
+    background-color: #333; /* Dark gray background */
+    padding: 10px; /* Adds spacing around the image */
+    display: inline-block; /* Keeps the div the right size */
+    border-radius: 5px; /* Optional: Adds rounded corners */
+}
+
 .logo img {
-    max-width: 120px; /* Adjust size to fit your design */
-    height: auto;
-    margin-right: 20px;
+    display: block; /* Removes extra space below the image */
+    width: 180px; /* Adjust size as needed */
+    height: auto; /* Maintains aspect ratio */
 }
 
 header {

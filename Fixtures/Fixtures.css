@@ -212,3 +212,22 @@ nav ul li a:hover {
         padding: 6px;
     }
 }
+
+/* Esfan tournamet poster*/
+.tournament-info {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #444;
+}
+
+.tournament-poster {
+    margin-top: 15px;
+    max-width: 100%;
+}
+
+.tournament-poster img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
