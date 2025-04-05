@@ -106,8 +106,11 @@ nav ul li a:hover {
 }
 
 .club-logos img {
-    width: 50px;
-    height: 50px;
+    width: auto;           /* or a fixed width like 50px if you want uniformity */
+    height: 100px;          /* keeps the height consistent */
+    margin: 0 10px;        /* space between logos */
+    object-fit: contain;   /* ensures the image fits well inside the box */
+    vertical-align: middle; /* keeps them aligned nicely */
 }
 
 .match-date {
