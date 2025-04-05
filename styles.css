@@ -178,7 +178,7 @@ nav ul li a:hover {
 
 /* Slideshow container */
 .slideshow-container {
-    max-width: 500px;
+    max-width: 100px;
     position: relative;
     margin: auto;
 }
@@ -221,7 +221,7 @@ nav ul li a:hover {
 
 /* Slideshow container */
 .slideshow-container {
-    max-width: 100000px; /* Adjust this value to change the size */
+    max-width: 1000px; /* Adjust this value to change the size */
     position: relative;
     margin: auto;
 }
@@ -563,61 +563,6 @@ nav ul li a:hover {
     font-size: 1.1rem;
 }
 
-/* Roster Section Styles */
-#roster {
-    padding: 20px;
-    background-color: #f9f9f9;
-    text-align: center;
-}
-
-.roster-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 20px;
-    margin-top: 20px;
-}
-
-.player-card {
-    display: flex;
-    align-items: center;
-    width: 80%;
-    max-width: 600px;
-    background-color: white;
-    border: 1px solid #ddd;
-    border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    overflow: hidden;
-    transition: transform 0.3s ease;
-}
-
-.player-card:hover {
-    transform: scale(1.05);
-}
-
-.player-card img {
-    width: 120px;
-    height: 120px;
-    object-fit: cover;
-    border-right: 1px solid #ddd;
-}
-
-.player-details {
-    padding: 15px;
-    text-align: left;
-}
-
-.player-details h3 {
-    margin: 0 0 10px;
-    font-size: 18px;
-    color: #333;
-}
-
-.player-details p {
-    margin: 5px 0;
-    font-size: 14px;
-    color: #555;
-}
 
 /* General styling for the Sign-Up button */
 .btn-signup {

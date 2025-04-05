@@ -120,7 +120,7 @@ form button:hover {
 
 /* Style for the logo */
 .logo img {
-    max-width: 120px; /* Adjust size to fit your design */
+    max-width: 180px; /* Adjust size to fit your design */
     height: auto;
     margin-right: 20px;
 }
