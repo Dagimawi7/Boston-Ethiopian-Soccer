@@ -302,18 +302,7 @@ nav ul li a:hover {
     color: #666;
     margin-bottom: 15px;
   }
-/* Soccer Animation */
-.soccer-animation {
-    margin: 20px auto;
-    width: 100px;
-    height: 100px;
-    background-image: url('assets/soccer.png'); /* Replace with your soccer ball image */
-    background-size: cover;
-    animation: epicSoccerBall 3s infinite ease-in-out;
-    border-radius: 50%;
-    position: relative; /* For shadow placement */
-    box-shadow: 0 5px 15px rgba(48, 172, 176, 0.3); /* Add shadow */
-  }
+
   
   /* Animation Keyframes */
   @keyframes epicSoccerBall {
