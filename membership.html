@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Roster - Soccer Club</title>
+    <title>Mebmbeshiop form</title>
     <link rel="stylesheet" href="roster.css">
 </head>
 <body>
@@ -23,19 +23,59 @@
         </nav>
     </header>
 
-    <!-- Membership Section -->
-    <section id="membership">
-        <h2>Membership Form</h2>
-        <p>Fill out the form below to apply for membership. We will review your application and notify you via email.</p>
+    <section id="membership" style="padding: 2em; max-width: 700px; margin: auto; font-family: sans-serif;">
+        <h2>Join Boston Ethiopian Soccer Club</h2>
+        <p>
+          Welcome to the Boston Ethiopian Soccer Club! As a member, you join a vibrant community celebrating Ethiopian culture and love for the game. 
+          Members are expected to participate in matches, practices, and community events, and represent the club with integrity, pride, and sportsmanship.
+        </p>
+      
+        <form action="https://formspree.io/f/xzzeovjl" method="POST" style="display: flex; flex-direction: column; gap: 1em; background: #111; padding: 2em; border-radius: 10px; color: white;">
+          <label>
+            Full Name:
+            <input type="text" name="name" required style="padding: 8px; border-radius: 5px; border: none;">
+          </label>
+      
+          <label>
+            Email Address:
+            <input type="email" name="email" required style="padding: 8px; border-radius: 5px; border: none;">
+          </label>
+      
+          <label>
+            Phone Number:
+            <input type="tel" name="phone" style="padding: 8px; border-radius: 5px; border: none;">
+          </label>
+      
+          <label>
+            Age Group:
+            <select name="age_group" required style="padding: 8px; border-radius: 5px; border: none;">
+              <option value="">Select</option>
+              <option value="Under 18">Under 18</option>
+              <option value="18–30">18–30</option>
+              <option value="30+">30+</option>
+            </select>
+          </label>
+      
+          <label>
+            Why do you want to join?
+            <textarea name="reason" rows="4" required style="padding: 8px; border-radius: 5px; border: none;"></textarea>
+          </label>
+      
+          <!-- Spam protection -->
+          <input type="text" name="_gotcha" style="display:none">
+      
+          <!-- Redirect after submit (optional) -->
+          <input type="hidden" name="_next" value="https://yourdomain.com/thank-you.html">
+      
+          <button type="submit" style="padding: 12px; border: none; border-radius: 5px; background: red; color: white; font-weight: bold; cursor: pointer;">
+            Submit Application
+          </button>
+        </form>
+      </section>
+      
+    
+  
 
-    <!-- Embedded Google Form -->
-        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdGwfUwT_9SzssVdu86xm-Eg_G_uAEO1hSkHTftQH8tWrNIkg/viewform?usp=header" 
-        width="100%" 
-        height="600" 
-        frameborder="0" 
-        marginheight="0" 
-        marginwidth="0">Loading…</iframe>
-    </section>
   <script src="Script.js"></script>
 </body>
 </html>
