@@ -605,3 +605,88 @@ nav ul li a:hover {
     }
 }
 
+/*upcoming games */
+.boston-schedule {
+    padding: 24px;
+    background: #fefefe;
+  }
+  
+  .boston-schedule h2 {
+    text-align: center;
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    color: #dc2626;
+  }
+  
+  .schedule-carousel {
+    display: flex;
+    overflow-x: auto;
+    gap: 20px;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+    padding: 10px;
+  }
+  
+  .schedule-card {
+    flex: 0 0 85%;
+    scroll-snap-align: start;
+    background: #ffffff;
+    border-radius: 16px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+    padding: 20px;
+    min-height: 280px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-left: 6px solid #dc2626;
+  }
+  
+  .teams {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  
+  .team {
+    text-align: center;
+  }
+  
+  .team img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: contain;
+    border: 3px solid #dc2626;
+    background-color: #fff;
+  }
+  
+  .team p {
+    margin-top: 10px;
+    font-weight: 600;
+    font-size: 1.1rem;
+  }
+  
+  .vs {
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .match-details {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .match-date {
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #444;
+  }
+  
+  .match-field {
+    font-size: 1rem;
+    color: #666;
+  }
+  
+  
+
