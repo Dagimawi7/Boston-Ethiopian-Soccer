@@ -31,4 +31,14 @@ function showSlides(n) {
   slides[slideIndex-1].style.display = "block";
   dots[slideIndex-1].className += " active";
 }
+function scrollCarousel(direction) {
+  const carousel = document.getElementById('gameCarousel');
+  const cardWidth = carousel.querySelector('.schedule-card').offsetWidth + 24; // 24px = gap
+  carousel.scrollBy({
+    left: direction * cardWidth,
+    behavior: 'smooth'
+  });
+}
+
+
 

@@ -78,70 +78,72 @@
     </div>
         </section>
 
-        <!-- 📅 Swipeable Boston Game Schedule - ESFNA 2025 -->
-        <section class="boston-schedule">
-            <h2>Boston Game Schedule - ESFNA 2025</h2>
-            <div class="schedule-carousel">
-        
-            <!-- Game 1 -->
-            <div class="schedule-card">
-                <div class="teams">
-                <div class="team">
-                    <img src="/assets/club-logo.png" alt="Boston Logo" />
-                    <p>Boston</p>
-                </div>
-                <div class="vs">vs</div>
-                <div class="team">
-                    <img src="/assets/houston-skyline-logo-355def.webp" alt="Houston Logo" />
-                    <p>Houston</p>
-                </div>
-                </div>
-                <div class="match-details">
-                <p class="match-date">Sunday, June 29 • 3:00 PM</p>
-                <p class="match-field">Field 2</p>
-                </div>
+       <!-- 🗕️ Swipeable Boston Game Schedule - ESFNA 2025 -->
+<section class="boston-schedule">
+    <h2>Boston Game Schedule - ESFNA 2025</h2>
+    <div class="carousel-wrapper">
+      <button class="carousel-btn left" onclick="scrollCarousel(-1)">&#10094;</button>
+      <div class="schedule-carousel" id="gameCarousel">
+        <!-- Game 1 -->
+        <div class="schedule-card">
+          <div class="teams">
+            <div class="team">
+              <img src="/assets/club-logo.png" alt="Boston Logo" />
+              <p>Boston</p>
             </div>
-        
-            <!-- Game 2 -->
-            <div class="schedule-card">
-                <div class="teams">
-                <div class="team">
-                    <img src="/assets/club-logo.png" alt="Boston Logo" />
-                    <p>Boston</p>
-                </div>
-                <div class="vs">vs</div>
-                <div class="team">
-                    <img src="/assets/maryland.jpeg" alt="Maryland Logo" />
-                    <p>Maryland</p>
-                </div>
-                </div>
-                <div class="match-details">
-                <p class="match-date">Tuesday, July 1 • 4:30 PM</p>
-                <p class="match-field">Field 1</p>
-                </div>
+            <div class="vs">vs</div>
+            <div class="team">
+              <img src="/assets/houston-skyline-logo-355def.webp" alt="Houston Logo" />
+              <p>Houston</p>
             </div>
-        
-            <!-- Game 3 -->
-            <div class="schedule-card">
-                <div class="teams">
-                <div class="team">
-                    <img src="/assets/club-logo.png" alt="Boston Logo" />
-                    <p>Boston</p>
-                </div>
-                <div class="vs">vs</div>
-                <div class="team">
-                    <img src="/assets/saintMichale.jpg" alt="Saint Michael Logo" />
-                    <p>Saint Michael</p>
-                </div>
-                </div>
-                <div class="match-details">
-                <p class="match-date">Wednesday, July 2 • 6:00 PM</p>
-                <p class="match-field">Field 1</p>
-                </div>
+          </div>
+          <div class="match-details">
+            <p class="match-date">Sunday, June 29 • 3:00 PM</p>
+            <p class="match-field">Field 2</p>
+          </div>
+        </div>
+  
+        <!-- Game 2 -->
+        <div class="schedule-card">
+          <div class="teams">
+            <div class="team">
+              <img src="/assets/club-logo.png" alt="Boston Logo" />
+              <p>Boston</p>
             </div>
-        
+            <div class="vs">vs</div>
+            <div class="team">
+              <img src="/assets/maryland.jpeg" alt="Maryland Logo" />
+              <p>Maryland</p>
             </div>
-        </section>
+          </div>
+          <div class="match-details">
+            <p class="match-date">Tuesday, July 1 • 4:30 PM</p>
+            <p class="match-field">Field 1</p>
+          </div>
+        </div>
+  
+        <!-- Game 3 -->
+        <div class="schedule-card">
+          <div class="teams">
+            <div class="team">
+              <img src="/assets/club-logo.png" alt="Boston Logo" />
+              <p>Boston</p>
+            </div>
+            <div class="vs">vs</div>
+            <div class="team">
+              <img src="/assets/saintMichale.jpg" alt="Saint Michael Logo" />
+              <p>Saint Michael</p>
+            </div>
+          </div>
+          <div class="match-details">
+            <p class="match-date">Wednesday, July 2 • 6:00 PM</p>
+            <p class="match-field">Field 1</p>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-btn right" onclick="scrollCarousel(1)">&#10095;</button>
+    </div>
+  </section>
   
   
 

@@ -604,89 +604,141 @@ nav ul li a:hover {
         padding: 6px;
     }
 }
-
-/*upcoming games */
+/*upcoming games*/
 .boston-schedule {
-    padding: 24px;
+    padding: 40px 20px;
     background: #fefefe;
-  }
+    font-family: 'Segoe UI', sans-serif;
+}
   
-  .boston-schedule h2 {
+.boston-schedule h2 {
     text-align: center;
-    font-size: 1.8rem;
-    margin-bottom: 20px;
+    font-size: 2rem;
+    margin-bottom: 30px;
     color: #dc2626;
-  }
+}
   
-  .schedule-carousel {
+.carousel-wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+  
+.schedule-carousel {
     display: flex;
     overflow-x: auto;
-    gap: 20px;
+    gap: 16px;
     scroll-snap-type: x mandatory;
     -webkit-overflow-scrolling: touch;
-    padding: 10px;
-  }
+    scroll-behavior: smooth;
+    padding: 0 20px;
+    max-width: 100%;
+    box-sizing: border-box;
+}
+
   
-  .schedule-card {
-    flex: 0 0 85%;
+.schedule-card {
+    flex: 0 0 100%;
     scroll-snap-align: start;
     background: #ffffff;
-    border-radius: 16px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
-    padding: 20px;
-    min-height: 280px;
+    border-radius: 20px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+    padding: 24px;
+    min-height: 300px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     border-left: 6px solid #dc2626;
-  }
+    transition: transform 0.3s ease;
+    box-sizing: border-box;
+}
   
-  .teams {
+.schedule-card:hover {
+    transform: scale(1.015);
+}
+  
+.teams {
     display: flex;
     justify-content: space-around;
     align-items: center;
-  }
+}
   
-  .team {
+.team {
     text-align: center;
-  }
+}
   
-  .team img {
-    width: 80px;
-    height: 80px;
+.team img {
+    width: 90px;
+    height: 90px;
     border-radius: 50%;
     object-fit: contain;
     border: 3px solid #dc2626;
     background-color: #fff;
-  }
+}
   
-  .team p {
+.team p {
     margin-top: 10px;
     font-weight: 600;
     font-size: 1.1rem;
-  }
+}
   
-  .vs {
-    font-size: 1.3rem;
+.vs {
+    font-size: 1.5rem;
     font-weight: bold;
     color: #333;
-  }
+}
   
-  .match-details {
+.match-details {
     text-align: center;
-    margin-top: 20px;
-  }
+    margin-top: 24px;
+}
   
-  .match-date {
+.match-date {
     font-size: 1.1rem;
     font-weight: bold;
     color: #444;
-  }
+}
   
-  .match-field {
+.match-field {
     font-size: 1rem;
     color: #666;
-  }
+}
   
+.carousel-btn {
+    background-color: #dc2626;
+    border: none;
+    color: white;
+    font-size: 2rem;
+    cursor: pointer;
+    padding: 10px 16px;
+    border-radius: 50%;
+    z-index: 10;
+    transition: background 0.3s;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
   
-
+.carousel-btn:hover {
+    background-color: #b91c1c;
+}
+  
+.carousel-btn.left {
+    left: -10px;
+}
+  
+.carousel-btn.right {
+    right: -10px;
+}
+  
+@media (max-width: 768px) {
+    .schedule-card {
+    flex: 0 0 95%;
+}
+  
+.carousel-btn {
+    font-size: 1.5rem;
+    padding: 8px 12px;
+    }
+}
+  
