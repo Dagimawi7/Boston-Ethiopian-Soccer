@@ -33,7 +33,7 @@ function showSlides(n) {
 }
 function scrollCarousel(direction) {
   const carousel = document.getElementById('gameCarousel');
-  const cardWidth = carousel.querySelector('.schedule-card').offsetWidth + 24; // 24px = gap
+  const cardWidth = carousel.querySelector('.schedule-card').offsetWidth + 20; // 20 = gap
   carousel.scrollBy({
     left: direction * cardWidth,
     behavior: 'smooth'

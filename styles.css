@@ -604,26 +604,25 @@ nav ul li a:hover {
         padding: 6px;
     }
 }
-/*upcoming games*/
-.boston-schedule {
-    padding: 40px 20px;
-    background: #fefefe;
-    font-family: 'Segoe UI', sans-serif;
-}
-  
+/* Upcoming games */
+/* Title Styling */
 .boston-schedule h2 {
     text-align: center;
     font-size: 2rem;
     margin-bottom: 30px;
     color: #dc2626;
 }
-  
+
+/* Carousel Wrapper Styling */
 .carousel-wrapper {
     position: relative;
     display: flex;
     align-items: center;
+    justify-content: center;
+    width: 100%;
 }
-  
+
+/* Carousel Styles */
 .schedule-carousel {
     display: flex;
     overflow-x: auto;
@@ -632,13 +631,16 @@ nav ul li a:hover {
     -webkit-overflow-scrolling: touch;
     scroll-behavior: smooth;
     padding: 0 20px;
-    max-width: 100%;
+    width: 100%;
     box-sizing: border-box;
+    justify-content: center; /* Space cards evenly on larger screens */
+    flex-wrap: wrap; /* Allow wrapping if needed on desktop */
 }
 
-  
+/* Individual Game Card */
 .schedule-card {
-    flex: 0 0 100%;
+    flex: 0 0 calc(33.33% - 40px); /* Show ~3 cards on larger screens */
+    max-width: 350px;
     scroll-snap-align: start;
     background: #ffffff;
     border-radius: 20px;
@@ -652,21 +654,22 @@ nav ul li a:hover {
     transition: transform 0.3s ease;
     box-sizing: border-box;
 }
-  
+
 .schedule-card:hover {
     transform: scale(1.015);
 }
-  
+
+/* Team Styling */
 .teams {
     display: flex;
     justify-content: space-around;
     align-items: center;
 }
-  
+
 .team {
     text-align: center;
 }
-  
+
 .team img {
     width: 90px;
     height: 90px;
@@ -675,36 +678,40 @@ nav ul li a:hover {
     border: 3px solid #dc2626;
     background-color: #fff;
 }
-  
+
 .team p {
     margin-top: 10px;
     font-weight: 600;
     font-size: 1.1rem;
 }
-  
+
+/* 'VS' Text Styling */
 .vs {
     font-size: 1.5rem;
     font-weight: bold;
     color: #333;
 }
   
+/* Match Details Styling */
 .match-details {
     text-align: center;
     margin-top: 24px;
 }
-  
+
 .match-date {
     font-size: 1.1rem;
     font-weight: bold;
     color: #444;
 }
-  
+
 .match-field {
     font-size: 1rem;
     color: #666;
 }
-  
+
+/* Arrow Buttons - default hidden on PC */
 .carousel-btn {
+    display: none; /* Hide on desktop */
     background-color: #dc2626;
     border: none;
     color: white;
@@ -722,23 +729,32 @@ nav ul li a:hover {
 .carousel-btn:hover {
     background-color: #b91c1c;
 }
-  
+
 .carousel-btn.left {
     left: -10px;
 }
-  
+
 .carousel-btn.right {
     right: -10px;
 }
   
-@media (max-width: 768px) {
+/* Mobile styles */
+@media (max-width: 480px) {
     .schedule-card {
-    flex: 0 0 95%;
-}
-  
-.carousel-btn {
-    font-size: 1.5rem;
-    padding: 8px 12px;
+        flex: 0 0 calc(100% - 20px);
+        padding: 16px;
+    }
+
+    .carousel-btn {
+        display: block; /* Only show arrows on mobile */
+        font-size: 1.5rem;
+        padding: 8px 12px;
+    }
+
+    .schedule-carousel {
+        justify-content: flex-start; /* For swiping experience */
+        flex-wrap: nowrap;
     }
 }
-  
+
+ 
