@@ -374,3 +374,199 @@ nav ul li a:hover {
     margin: 0 auto;      /* center on desktop */
   }
   
+
+
+/* General Styling for Program Content */
+.program-content {
+    display: flex;
+    flex-wrap: wrap; /* Allows elements to wrap to new lines when needed */
+    gap: 40px; /* Space between the sections */
+    padding: 40px 5%; /* Padding on top, bottom, and sides */
+    background-color:white; /* Light background color for contrast */
+    box-sizing: border-box; /* Ensures padding doesn't affect width */
+}
+
+/* Poster Section - Holds the main event details and poster */
+.poster-section {
+    flex: 1; /* Takes equal space on larger screens */
+    min-width: 320px; /* Ensures the section doesn’t go too small on mobile */
+    max-width: 600px; /* Restricts the maximum size for larger screens */
+    background-color: white; /* White background for contrast */
+    padding: 30px; /* Padding inside the section */
+    border-radius: 16px; /* Rounded corners for a soft look */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+    transition: transform 0.3s ease; /* Adds a subtle effect on hover */
+}
+
+/* Poster Section Hover Effect - Lifts the card slightly */
+.poster-section:hover {
+    transform: translateY(-5px); /* Creates a lift effect when hovering */
+}
+
+/* Header of the Poster Section - Title for Kids Soccer */
+.poster-header h1 {
+    font-size: 2.5rem; /* Larger font for the title */
+    font-weight: bold;
+    color: #006400; /* Green color for "SOCCER" */
+}
+
+/* Subtitle for Kids */
+.poster-header .for-kids {
+    color: #f4c200; /* Yellow for "FOR KIDS" to make it stand out */
+    font-weight: bold;
+}
+
+/* "Powered by" and Club Name Styling */
+.poster-header .powered {
+    font-size: 1.2rem;
+    color: #d60000; /* Red for emphasis */
+    margin-top: 10px;
+}
+
+.poster-header .club-name {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #d60000; /* Red for the club name */
+    margin-top: 10px;
+}
+
+/* Poster Image Styling */
+.poster-image {
+    width: 100%; /* Ensures the image stretches to full container width */
+    height: auto; /* Maintains the image aspect ratio */
+    border-radius: 10px; /* Rounded corners for a clean look */
+    margin-top: 20px;
+    border: 4px solid #f4c200; /* Yellow border around the image for emphasis */
+}
+
+/* Poster Text Section - Details about the event */
+.poster-text {
+    margin-top: 20px;
+    font-size: 1.1rem; /* Slightly larger text for readability */
+    line-height: 1.6; /* Improved readability with line height */
+    color: #333; /* Dark text for better contrast */
+}
+
+/* Highlighted Text - Green for important event details */
+.poster-text .age-range,
+.poster-text .location,
+.poster-text .start-date-label,
+.poster-text .start-date,
+.poster-text .time {
+    color: #006400; /* Green */
+    font-weight: bold;
+}
+
+/* Email Link Styling */
+.poster-text .email a {
+    color: #006400; /* Green color for the email */
+    font-weight: bold;
+    text-decoration: underline; /* Underline for links */
+}
+
+/* Forms Section - For downloading and submitting forms */
+.form-section {
+    flex: 1;
+    min-width: 320px;
+    max-width: 600px;
+    background-color: white;
+    padding: 30px;
+    border-radius: 16px;
+    box-shadow: white;
+    margin-top: 40px;
+}
+
+/* Header for Forms Section */
+.form-section h3 {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #006400; /* Green */
+    margin-bottom: 15px;
+}
+
+/* Text under Forms Section */
+.form-section p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #333;
+    margin-bottom: 25px;
+}
+
+/* Download Button Styles - Green button to match the theme */
+.download-btn {
+    display: inline-block;
+    padding: 16px;
+    background-color: #006400; /* Green background for buttons */
+    color: white;
+    font-weight: bold;
+    font-size: 1rem;
+    text-align: center;
+    border-radius: 8px; /* Rounded button corners */
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+    width: 100%; /* Full width on mobile for easy clicking */
+    margin-bottom: 20px;
+}
+
+/* Hover effect for download buttons */
+.download-btn:hover {
+    background-color: #004d00; /* Darker green on hover */
+}
+
+/* Container for Buttons */
+.btn-container {
+    margin-bottom: 25px; /* Space between buttons */
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 1024px) {
+    /* Adjust font sizes for tablets and smaller screens */
+    .poster-header h1 {
+        font-size: 2rem;
+    }
+
+    .poster-header .for-kids {
+        font-size: 1.5rem;
+    }
+
+    .form-section h3 {
+        font-size: 1.6rem;
+    }
+
+    .poster-text {
+        font-size: 1rem;
+    }
+
+    .download-btn {
+        font-size: 0.9rem;
+    }
+}
+
+/* Extra Mobile-Friendly Styling for screens smaller than 768px */
+@media (max-width: 768px) {
+    /* Stacks the sections vertically on smaller screens */
+    .program-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /* Ensures content takes up full width on mobile */
+    .poster-section, .form-section {
+        max-width: 100%;
+        padding: 25px;
+    }
+
+    .poster-header h1 {
+        font-size: 1.8rem;
+    }
+
+    .poster-text {
+        font-size: 1rem;
+    }
+
+    /* Ensures buttons are still full-width */
+    .download-btn {
+        font-size: 0.9rem;
+    }
+}
+
